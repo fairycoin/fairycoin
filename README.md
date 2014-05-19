@@ -1,14 +1,14 @@
-Gamecoin - a lite version of Litecoin using scrypt as a proof of work scheme.
- - 2.5 minute block targets
- - subsidy halves in 3360k blocks (~4 years)
- - ~3360 million total coins
+Fairycoin - a lite version of Litecoin using scrypt as a proof of work scheme.
+ - tbd minute block targets
+ - subsidy halves in tbdk blocks (~tbd years)
+ - ~tbd million total coins
 
 The rest is the same as bitcoin.
- - 1000 coins per block
- - 2016 blocks to retarget difficulty
+ - 256 coins per block
+ - tbd blocks to retarget difficulty
  
 Download
-See http://www.gamecoin.cc
+See http://www.
 
 Development process
 ===================
@@ -37,5 +37,3 @@ in this manner will have their corresponding issue labeled 'stagnant'.
 Issues with no commits will be given a similar warning, and closed after
 15 days from their last activity. Issues closed in this manner will be 
 labeled 'stale'. 
-
-Check out http://gamecoin.cc for more info about the development.
