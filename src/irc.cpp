@@ -2,6 +2,7 @@
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2011-2012 Litecoin Developers
 // Copyright (c) 2013 Gamecoin Developers
+// Copyright (c) 2014 Fairycoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -295,14 +296,14 @@ void ThreadIRCSeed2(void* parg)
         }
         
         if (fTestNet) {
-            Send(hSocket, "JOIN #gamecoinTEST3\r");
-            Send(hSocket, "WHO #gamecoinTEST3\r");
+            Send(hSocket, "JOIN #fairycoinTEST3\r");
+            Send(hSocket, "WHO #fairycoinTEST3\r");
         } else {
-            // randomly join #gamecoin00-#gamecoin99
+            // randomly join #fairycoin00-#fairycoin99
             int channel_number = GetRandInt(100);
-            channel_number = 0; // Gamecoin: for now, just use one channel
-            Send(hSocket, strprintf("JOIN #gamecoin%02d\r", channel_number).c_str());
-            Send(hSocket, strprintf("WHO #gamecoin%02d\r", channel_number).c_str());
+            channel_number = 0; // Fairycoin: for now, just use one channel
+            Send(hSocket, strprintf("JOIN #fairycoin%02d\r", channel_number).c_str());
+            Send(hSocket, strprintf("WHO #fairycoin%02d\r", channel_number).c_str());
         }
 
         int64 nStart = GetTime();
